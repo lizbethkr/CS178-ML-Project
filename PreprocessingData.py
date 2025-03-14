@@ -82,12 +82,12 @@ def droping_again(file_path):
     df = df.dropna(subset = ['max_glu_serum'])
 
     # Save the cleaned DataFrame to a new CSV
-    df.to_csv("data/diabetic_data_cleaned.csv", index = False)
+    df.to_csv("data/KNN_cleaned_data.csv", index = False)
 
 
 if __name__ == '__main__':
     # file_path = "data/diabetic_data.csv"
-    # file_path = "data/diabetic_data_cleaned.csv"
+    # file_path = "data/KNN_cleaned_data.csv"
     # remove_missing_values("data/diabetic_data.csv")
-    # remove_unneeded_columns("data/diabetic_data_cleaned.csv")
+    # remove_unneeded_columns("data/KNN_cleaned_data.csv")
     find_missing_values_columns("data/diabetic_data_cleaned.csv")
